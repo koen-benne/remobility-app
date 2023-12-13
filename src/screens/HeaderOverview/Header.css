@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1F2235;
+  color: #fff;
+  padding: 1px 40px; /* Increased side padding for alignment */
+  box-sizing: border-box;
+}
+
+.header h1 {
+  font-size: 64px; /* Increased font size for the header title */
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.online-indicator {
+  width: 41.76px; /* Adjust size as needed */
+  height: 41.76px; /* Adjust size as needed */
+  background-color: #61C554;
+  border-radius: 50%; /* Circular shape */
+  margin-left: 20px; /* Space between name and indicator */
+  margin-top: 10px;
+}
+
+.side-button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center-align items horizontally */
+  justify-content: center; /* Center-align items vertically */
+  font-size: 20px; /* Adjust as necessary to match the blue buttons */
+  padding: 10px 20px; /* Padding to increase clickable area */
+  text-align: center;
+}
+
+.icongear {
+  width: 60px; /* Or the size you prefer */
+  height: 60px; /* Or the size you prefer */
+}
+.iconlogout {
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  margin-bottom: 10px; /* Space between icon and text */
+}
