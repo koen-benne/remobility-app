@@ -9,11 +9,11 @@ const Startup = (props) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTimer(prev => prev + 1);
-      if (timer > 1) {
+      setTimer(prev => prev + 0.1);
+      if (timer > 0.6) {
         navigate('/login', {replace: true});
       }
-    }, 1000);
+    }, 100);
     return () => clearInterval(interval);
   }, [timer]);
 
