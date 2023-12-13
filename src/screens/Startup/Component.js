@@ -11,7 +11,7 @@ const Startup = (props) => {
     const interval = setInterval(() => {
       setTimer(prev => prev + 1);
       if (timer > 1) {
-        navigate('/about', {replace: true});
+        navigate('/login', {replace: true});
       }
     }, 1000);
     return () => clearInterval(interval);

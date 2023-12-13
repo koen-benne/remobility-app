@@ -1,4 +1,4 @@
-.screen {
+.scree {
   width: 100vw;
   height: 100vh;
   background-color: #1F2235;
@@ -6,8 +6,6 @@
   justify-content: center;
   align-items: center;
 
-  .logo {
-  }
   .disappear {
     visibility: hidden;
     opacity: 0;
