@@ -17,13 +17,14 @@
     .logo {
       position: absolute;
       top: 20px;
-      left: 20px;
-      width: 35vw;
+      width: 25%;
     }
   }
 
   .right {
     flex-grow: 4;
     height: 100vh;
+    background-position: center;
+    background-size: cover;
   }
 }
