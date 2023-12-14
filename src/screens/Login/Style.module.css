@@ -7,22 +7,26 @@
   align-items: center;
 
   .left {
-    flex-grow: 5;
+    width: 50vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
+    .loginContainer {
+      width: 70%;
+      max-width: 400px;
 
-    .logo {
-      position: absolute;
-      top: 20px;
-      width: 25%;
+      .logo {
+        width: 80%;
+      }
     }
+
   }
 
   .right {
-    flex-grow: 4;
+    width: 50vw;
     height: 100vh;
     background-position: center;
     background-size: cover;
