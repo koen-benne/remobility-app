@@ -3,7 +3,7 @@ import style from './Style.module.css';
 
 const FormInput = (props) => {
   const { label, placeholder, type, value, onChange, onClick, disabled } = props;
-  console.log(value)
+  console.log(onClick)
 
   return (
     <div className={`
@@ -19,7 +19,7 @@ const FormInput = (props) => {
         placeholder={placeholder}
         value={value}
         // onChange={onChange}
-        // onClick={onClick}
+        onClick={onClick}
         // disabled={disabled}
       />
     </div>

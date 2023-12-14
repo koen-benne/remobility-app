@@ -1,8 +1,11 @@
 import React from 'react';
 import style from './Style.module.css';
 import Options from '../../components/Options/Component';
+import { useNavigate } from 'react-router';
 
 const Login = (props) => {
+  const navigate = useNavigate();
+
   const options = [
     {
       option: "Login",
@@ -30,7 +33,7 @@ const Login = (props) => {
         {
           type: "submit",
           value: "Inloggen",
-          // onClick: props.onClickLogin,
+          onClick: () => navigate('/welcome', {replace: true}),
           // disabled: props.disabledLogin,
         }
       ]
@@ -62,7 +65,7 @@ const Login = (props) => {
         {
           type: "submit",
           value: "Registreren",
-          // onClick: props.onClickLogin,
+          onClick: () => navigate('/welcome', {replace: true}),
           // disabled: props.disabledLogin,
         }
       ]
