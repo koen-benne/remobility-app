@@ -30,7 +30,7 @@
 
   .submit {
     color: white;
-    background-color: blue;
+    background-color: var(--color-secondary-blue);
     font-weight: bold;
     box-sizing: content-box;
   }
