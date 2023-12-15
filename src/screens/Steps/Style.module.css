@@ -1,0 +1,56 @@
+.screen {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .welcome {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      top: 70px;
+      width: 200px;
+      position: absolute;
+    }
+
+    .textContainer {
+      max-width: 80%;
+
+      .title {
+        font-size: 8rem;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      .text {
+        color: white;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+
+  .progressBar {
+    width: 80%;
+    height: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 200px;
+
+    .barSection {
+      height: 100%;
+      flex: 1;
+      background-color: white;
+      margin: 0 0.2rem;
+      border-radius: 8px;
+    }
+  }
+}
