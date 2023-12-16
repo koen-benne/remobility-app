@@ -18,6 +18,7 @@
     margin: 10px 0;
     font-size: 16px;
     outline: none;
+    box-sizing: border-box;
   }
 
   .email {
@@ -32,7 +33,12 @@
     color: white;
     background-color: var(--color-secondary-blue);
     font-weight: bold;
-    box-sizing: content-box;
+  }
+
+  .button {
+    color: white;
+    background-color: var(--color-secondary-blue);
+    font-weight: bold;
   }
 }
 

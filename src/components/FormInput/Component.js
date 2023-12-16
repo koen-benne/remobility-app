@@ -1,26 +1,19 @@
 import React from 'react';
-import style from './Style.module.css';
+import stylecss from './Style.module.css';
 
 const FormInput = (props) => {
-  const { label, placeholder, type, value, onChange, onClick, disabled } = props;
-  console.log(onClick)
 
   return (
     <div className={`
-      ${type === "checkbox" ? style.checkboxContainer : style.container}
+      ${props.type === "checkbox" ? stylecss.checkboxContainer : stylecss.container}
     `}>
       {
-        label &&
-        <label className={style.label}>{label}</label>
+        props.label &&
+        <label className={stylecss.label}>{props.label}</label>
       }
       <input
-        className={`${style.input} ${style[type]}`}
-        type={type}
-        placeholder={placeholder}
-        value={value}
-        // onChange={onChange}
-        onClick={onClick}
-        // disabled={disabled}
+        className={`${stylecss.input} ${stylecss[props.type]}`}
+        {...props}
       />
     </div>
   );

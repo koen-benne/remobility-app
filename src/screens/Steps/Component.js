@@ -1,24 +1,60 @@
 import React, { useEffect, useState } from 'react';
 import style from './Style.module.css';
 import { useNavigate } from 'react-router';
+import FormInput from '../../components/FormInput/Component';
 
 const Steps = (props) => {
   const steps = [
     {
       icon: "",
       title: "Controller Aansluiten",
-      subtitle: "test",
+      subtitle: "Als eerst moeten we de controller aansluiten. Zorg dat de controller aanstaat, dan kan deze gekoppeld worden. Als die gekoppeld is gaan we door.",
       successIcon: "test",
       successTitle: "Controller Gevonden",
-      successSubtitle: "test"
+      successSubtitle: "De controller is gevonden en gekoppeld.",
     },
     {
-      icon: "test",
+      icon: "",
       title: "Car Koppelen",
-      subtitle: "test",
+      subtitle: "Scan de QR-code of voer koppelcode in om een auto toe te voegen.",
+      options: [
+        {
+          placeholder: "Scan de QR-code",
+          value: "QR-code",
+          fontSize: "3rem",
+          height: "350px",
+          style: {
+            fontSize: "3rem",
+            height: "350px",
+            borderRadius: "20px",
+          },
+          onClick: () => console.log("Qr-code"),
+        },
+        {
+          placeholder: "Voer de koppelcode in",
+          value: "Koppelcode",
+          style: {
+            fontSize: "3rem",
+            height: "350px",
+            borderRadius: "20px",
+          },
+          onClick: () => console.log("Koppelcode"),
+        },
+      ],
       successIcon: "test",
       successTitle: "Car Gekoppeld",
-      successSubtitle: "test"
+      successSubtitle: "De auto staat aan en is gekoppeld aan uw profiel.",
+      successOptions: [
+        {
+          placeholder: "Afronden",
+          value: "Afronden",
+          style: {
+            height: "80px",
+            fontSize: "1.5rem",
+          },
+          onClick: () => navigate('/login'),
+        },
+      ],
     },
   ];
 
@@ -26,11 +62,11 @@ const Steps = (props) => {
 
   const [step, setStep] = useState(0);
   const [success, setSuccess] = useState(false);
+  const options = (steps[step - 1] || {})[success ? "successOptions" : "options"];
 
   useEffect(() => {
     const interval = setInterval(() => {
       if (step === 2) {
-        navigate('/login');
         return;
       }
       setSuccess(false);
@@ -58,13 +94,24 @@ const Steps = (props) => {
           <div className={style.textContainer}>
             <h1 className={style.title}>{steps[step - 1][success ? "successTitle" : "title"]}</h1>
             <p className={style.text}>{steps[step - 1][success ? "successSubtitle" : "subtitle"]}</p>
+            {options &&
+              <div className={style.options}>
+                {options.map((option) => (
+                  <div className={style.option}>
+                    <FormInput type="button" {...option} />
+                  </div>
+                ))}
+              </div>
+            }
           </div>
         </div>
       }
 
       <div className={step > 0 ? style.progressBar : null}>
-        {steps.map((step) => (
-          <div className={style.barSection}></div>
+        {steps.map((s, i) => (
+          <div className={style.barSection} style={{color: "black"}}>
+            <div className={`${style.filler} ${step + success >= i + 2 && style.show}`}></div>
+          </div>
         ))}
       </div>
     </div>

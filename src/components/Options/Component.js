@@ -21,7 +21,7 @@ const Options = (props) => {
       </div>
       <div className={style.option}>
         {options[selectedOption].fields.map((field, index) => (
-          <FormInput label={field.label} placeholder={field.placeholder} type={field.type} value={field.value} onClick={field.onClick} />
+          <FormInput {...field} />
         ))}
       </div>
     </div>
