@@ -10,14 +10,14 @@
     padding: 0 20px; /* Adjust padding as needed */
     background-color: #2C2C2C;
   }
-  
+
   /* Back arrow container */
-  .back-arrow-container {
+  .backArrowContainer {
     flex: 0 1 auto; /* Do not grow, allow shrink */
   }
-  
+
   /* Speed indicator container */
-  .speed-indicator-container {
+  .speedIndicatorContainer {
     flex: 0 1 auto; /* Do not grow, allow shrink */
     display: flex;
     flex-direction: column;
@@ -26,14 +26,14 @@
     transform: translateX(50px); /* Adjust the value to move the container to the right */
     margin-top: 20px;
   }
-  
-  .speed-indicator {
+
+  .speedIndicator {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
   }
-  
+
   .circle {
     width: 20px;
     height: 20px;
@@ -41,23 +41,24 @@
     margin: 0 5px;
     background-color: transparent;
     border: 2px solid white;
+
+    .blue {
+      background-color: blue;
+    }
   }
-  
-  .circle.blue {
-    background-color: blue;
-  }
-  
-  .speed-text {
+
+
+  .speedText {
     color: white;
     margin-top: -5px;
   }
-  
+
   /* Icons container */
-  .icons-container {
+  .iconsContainer {
     flex: 0 1 auto; /* Do not grow, allow shrink */
     display: flex;
     align-items: center;
     justify-content: flex-end; /* Align icons to the end (right) */
     transform: translateX(-60px);
   }
-  
+

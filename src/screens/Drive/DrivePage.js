@@ -1,7 +1,7 @@
 import React from 'react';
-import backgroundImage from '../../assets/drive-background.png'; 
-import DriveFooter from '../Footers/FooterDrive'; 
-import './DrivePage.css'; 
+import backgroundImage from '../../assets/drive-background.png';
+import DriveFooter from '../../components/Footers/DriveFooter/Component';
+import './DrivePage.css';
 
 function DrivePage() {
 
