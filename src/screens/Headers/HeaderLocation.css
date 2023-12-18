@@ -43,6 +43,7 @@
   .name-id {
     margin-right: 15px;
     font-weight: bold;
+    color: black;
   }
   
   .status-indicator {
@@ -57,5 +58,6 @@
   .current-time {
     font-weight: bold;
     margin-right: 15px;
+    color: black;
   }
   

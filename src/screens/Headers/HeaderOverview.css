@@ -10,6 +10,7 @@
 
 .overview-header h1 {
   font-size: 64px; /* Increased font size for the header title */
+  text-align: center;
 }
 
 .overview-header-content {
