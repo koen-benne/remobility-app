@@ -1,4 +1,4 @@
-.header {
+.overview-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,11 +8,11 @@
   box-sizing: border-box;
 }
 
-.header h1 {
+.overview-header h1 {
   font-size: 64px; /* Increased font size for the header title */
 }
 
-.header-content {
+.overview-header-content {
   display: flex;
   align-items: center;
 }

@@ -3,26 +3,18 @@ import { useEffect } from 'react';
 import './App.css';
 import Dashboard from './screens/Dashboard/Dashboard';
 import Startup from './screens/Startup/Component'; // Your original import
+import LiveLocation from './screens/LiveLocation/LocationPage'; // Adjust the path if necessary
+import Drive from './screens/Drive/DrivePage';
 
 function App() {
-  let navigate = useNavigate();
-
-  // This effect would run once after the component mounts
-  useEffect(() => {
-    // Suppose your splash animation takes 3 seconds
-    const timer = setTimeout(() => {
-      navigate('/dashboard'); // Redirect to the Dashboard after the timeout
-    }, 2000);
-
-    // Cleanup the timer when the component unmounts
-    return () => clearTimeout(timer);
-  }, [navigate]);
 
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<Startup />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/drive" element={<Drive />} /> {/* Route for the drive page */}
+        <Route path="/location" element={<LiveLocation />} /> {/* Route for the location page */}
       </Routes>
     </div>
   );
