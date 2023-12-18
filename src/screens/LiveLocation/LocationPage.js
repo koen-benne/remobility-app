@@ -1,7 +1,7 @@
 import React from 'react';
-import './LocationPage.css'; 
+import './LocationPage.css';
 import backgroundImage from  '../../assets/map.png';
-import HeaderLocation from '../Headers/HeaderLocation';
+import LocationHeader from '../../components/Headers/LocationHeader/Component';
 import Vector from '../../assets/vector.png';
 import Battery80 from '../../assets/battery80.png';
 import Internet3 from '../../assets/internet3.png';
@@ -13,12 +13,12 @@ function LocationPage() {
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     height: '100vh',
-    width: '100vw', 
+    width: '100vw',
   };
 
   return (
     <>
-    <HeaderLocation />
+    <LocationHeader />
       <div className="location-page" style={pageStyle}>
           <div className="mini-dynamic-island">
           <img src={Battery80} alt="battery80" className='battery80'/>

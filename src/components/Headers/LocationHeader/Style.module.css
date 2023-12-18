@@ -1,4 +1,4 @@
-.location-header {
+.locationHeader {
     position: absolute; /* Position the header absolutely within its relative container */
     top: 20px; /* Adjust as needed */
     left: 50%;
@@ -16,37 +16,37 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Optional: adds shadow for depth */
   }
 
-  .back-arrow-container {
+  .backArrowContainer {
     position: absolute;
     left: -75%; /* Adjust as needed to position the back arrow to the left */
     top: 50%;
     transform: translateY(-50%); /* Center the arrow vertically */
     z-index: 11; /* Ensure it sits above the header capsule */
   }
-  
-  .back-arrow {
+
+  .backArrow {
     cursor: pointer;
     margin-right: 20px; /* Adjust as needed */
     /* Add size and other styles for the back arrow */
   }
-  
-  .location-header-info {
+
+  .locationHeaderInfo {
     display: flex;
     align-items: center;
     font-size: 32px;
   }
-  
+
   .vector {
     margin-right: 15px;
   }
 
-  .name-id {
+  .nameId {
     margin-right: 15px;
     font-weight: bold;
     color: black;
   }
-  
-  .status-indicator {
+
+  .statusIndicator {
     width: 41.76px; /* Adjust size as needed */
     height: 41.76px; /* Adjust size as needed */
     background-color: #61C554;
@@ -54,10 +54,10 @@
     margin-right: 15px; /* Space between name and indicator */
     margin-top: 5px;
   }
-  
-  .current-time {
+
+  .currentTime {
     font-weight: bold;
     margin-right: 15px;
     color: black;
   }
-  
+

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router';
-import './HeaderLocation.css'; 
-import backArrow from '../../assets/chevron.left.png'; 
-import Vector from '../../assets/vector.png';
+import style from './Style.module.css';
+import backArrow from '../../../assets/chevron.left.png';
+import Vector from '../../../assets/vector.png';
 
-const HeaderLocation = () => {
+const LocationHeader = () => {
   const navigate = useNavigate();
   const [currentTime, setCurrentTime] = useState(new Date()); // State to store the current time
 
@@ -21,18 +21,18 @@ const HeaderLocation = () => {
   const formattedTime = currentTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
   return (
-    <header className="location-header">
-      <div className="back-arrow-container" onClick={() => navigate('/dashboard')}>
+    <header className={style.locationHeader}>
+      <div className={style.backArrowContainer} onClick={() => navigate('/dashboard')}>
         <img src={backArrow} alt="Back" className="back-arrow"/>
       </div>
-      <div className="location-header-info">
-        <img src={Vector} alt="vector" className="vector"/>
-        <span className="name-id">IP-Car_123456</span>
-        <span className="status-indicator"></span>
-        <span className="current-time">{formattedTime}</span>
+      <div className={style.locationHeaderInfo}>
+        <img src={Vector} alt="vector" className={style.vector}/>
+        <span className={style.nameId}>IP-Car_123456</span>
+        <span className={style.statusIndicator}></span>
+        <span className={style.currentTime}>{formattedTime}</span>
       </div>
     </header>
   );
 };
 
-export default HeaderLocation;
+export default LocationHeader;
