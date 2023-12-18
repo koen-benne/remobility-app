@@ -1,4 +1,4 @@
-.location-page {
+.locationPage {
   position: relative; /* The parent container must be relative for absolute children */
   width: 100%; /* Full width */
   height: 100vh; /* Full viewport height */
@@ -6,7 +6,7 @@
   background-position: center;
 }
 
-.mini-dynamic-island {
+.miniDynamicIsland {
   position: absolute;
   padding: 15px 25px;
   top: 52%; /* Adjust this value to change the vertical position */
@@ -23,7 +23,7 @@
   z-index: 10;
 }
 
-.vector-graphic {
+.vectorGraphic {
   position: absolute;
   width: 50px; /* Width of the vector graphic */
   height: 50px; /* Height of the vector graphic */

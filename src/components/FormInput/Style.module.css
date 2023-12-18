@@ -21,24 +21,24 @@
     box-sizing: border-box;
   }
 
-  .email {
-
-  }
-
-  .password {
-
-  }
-
   .submit {
     color: white;
     background-color: var(--color-secondary-blue);
     font-weight: bold;
+
+    &:hover {
+      background-color: var(--color-secondary-blue-hover);
+    }
   }
 
   .button {
     color: white;
     background-color: var(--color-secondary-blue);
     font-weight: bold;
+
+    &:hover {
+      background-color: var(--color-secondary-blue-hover);
+    }
   }
 }
 

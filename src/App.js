@@ -4,8 +4,8 @@ import Startup from './screens/Startup/Component';
 import Login from './screens/Login/Component';
 import Steps from './screens/Steps/Component';
 import Dashboard from './screens/Dashboard/Dashboard';
-import LiveLocation from './screens/LiveLocation/LocationPage'; // Adjust the path if necessary
-import Drive from './screens/Drive/DrivePage';
+import LiveLocation from './screens/LiveLocation/Component';
+import Drive from './screens/Drive/Component';
 
 function App() {
 

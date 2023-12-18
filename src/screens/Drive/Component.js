@@ -1,13 +1,13 @@
 import React from 'react';
 import backgroundImage from '../../assets/drive-background.png';
 import DriveFooter from '../../components/Footers/DriveFooter/Component';
-import './DrivePage.css';
+import style from './Style.module.css';
 
-function DrivePage() {
+function Drive() {
 
   return (
-    <div className="drive-page">
-      <div className="background-image-container" style={{ backgroundImage: `url(${backgroundImage})` }}>
+    <div className={style.drivePage}>
+      <div className={style.backgroundImageContainer} style={{ backgroundImage: `url(${backgroundImage})` }}>
         {/* Content above the footer */}
       </div>
       <DriveFooter/>
@@ -15,4 +15,4 @@ function DrivePage() {
   );
 }
 
-export default DrivePage;
+export default Drive;
