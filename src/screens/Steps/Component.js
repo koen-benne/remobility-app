@@ -66,7 +66,7 @@ const Steps = (props) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (step === 0) {
+      if (step === 2) {
         return;
       }
       setSuccess(false);
