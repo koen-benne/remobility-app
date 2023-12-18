@@ -4,8 +4,8 @@
     flex-direction: column;
     background-color: #1F2235;
 }
-  
-.button-container {
+
+.buttonContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

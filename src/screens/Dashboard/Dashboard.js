@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router'; // Import useNavigate hook
+import style from './Style.module.css';
 import HeaderOverview from '../Headers/HeaderOverview';
-import './Dashboard.css';
 import FormInput from '../../components/FormInput/Component';
 
 function Dashboard() {
@@ -10,7 +10,7 @@ function Dashboard() {
   return (
     <>
       <HeaderOverview />
-      <div className="button-container">
+      <div className={style.buttonContainer}>
         <FormInput
           type="iconButton"
           iconName="drive"
