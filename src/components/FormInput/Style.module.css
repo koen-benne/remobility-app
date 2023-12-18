@@ -85,4 +85,8 @@
     color: white;
     font-weight: bold;
   }
+
+  &:hover {
+    background-color: var(--color-secondary-blue-hover);
+  }
 }
