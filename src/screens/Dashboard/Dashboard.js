@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router'; // Import useNavigate hook
 import style from './Style.module.css';
-import HeaderOverview from '../Headers/HeaderOverview';
+import OverviewHeader from '../../components/Headers/OverviewHeader/Component';
 import FormInput from '../../components/FormInput/Component';
 
 function Dashboard() {
@@ -9,7 +9,7 @@ function Dashboard() {
 
   return (
     <>
-      <HeaderOverview />
+      <OverviewHeader />
       <div className={style.buttonContainer}>
         <FormInput
           type="iconButton"

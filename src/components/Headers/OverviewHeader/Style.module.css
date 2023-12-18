@@ -1,4 +1,4 @@
-.overview-header {
+.overviewHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,17 +8,17 @@
   box-sizing: border-box;
 }
 
-.overview-header h1 {
+.overviewHeader h1 {
   font-size: 64px; /* Increased font size for the header title */
   text-align: center;
 }
 
-.overview-header-content {
+.overviewHeaderContent {
   display: flex;
   align-items: center;
 }
 
-.online-indicator {
+.onlineIndicator {
   width: 41.76px; /* Adjust size as needed */
   height: 41.76px; /* Adjust size as needed */
   background-color: #61C554;
@@ -27,7 +27,7 @@
   margin-top: 10px;
 }
 
-.side-button {
+.sideButton {
   background: none;
   border: none;
   color: #fff;
@@ -41,11 +41,11 @@
   text-align: center;
 }
 
-.icongear {
+.gearIcon {
   width: 60px; /* Or the size you prefer */
   height: 60px; /* Or the size you prefer */
 }
-.iconlogout {
+.iconLogout {
   width: 40px; /* Adjust size as needed */
   height: 40px; /* Adjust size as needed */
   margin-bottom: 10px; /* Space between icon and text */
