@@ -62,3 +62,27 @@
     margin-left: 0;
   }
 }
+
+.iconButton {
+  background-color: var(--color-secondary-blue);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  flex: 1;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box; /* Include padding and border in the width and height */
+  margin: 0 20px; /* Horizontal margin between buttons */
+
+  .icon {
+    color: white;
+  }
+
+  .text {
+    color: white;
+    font-weight: bold;
+  }
+}
