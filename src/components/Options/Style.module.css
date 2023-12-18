@@ -1,24 +1,28 @@
-.selector {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 0 1rem 0;
+.options {
+  width: 100%;
 
-  .optionButton {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-top: 4rem;
-    padding-bottom: 0.5rem;
-    color: white;
-    font-weight: bold;
-    width: 50%;
-    height: max-content;
-    border-bottom: 1px solid white;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    background: none;
+  .selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 1rem 0;
+
+    .optionButton {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-top: 4rem;
+      padding-bottom: 0.5rem;
+      color: white;
+      font-weight: bold;
+      width: 50%;
+      height: max-content;
+      border-bottom: 1px solid white;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      background: none;
+    }
   }
 }
 
