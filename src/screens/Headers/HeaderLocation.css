@@ -1,0 +1,61 @@
+.location-header {
+    position: absolute; /* Position the header absolutely within its relative container */
+    top: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center the header */
+    z-index: 10; /* Ensure it sits on top of other elements */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white; /* or the color of the header in your mockup */
+    padding: 10px 40px; /* Padding inside the header */
+    margin-left: auto; /* Only pushing the header from the left */
+    margin-right: auto; /* Only pushing the header from the right */
+    max-width: 80%; /* Maximum width of the header to keep it centered */
+    border-radius: 30px; /* Large border radius for rounded edges */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Optional: adds shadow for depth */
+  }
+
+  .back-arrow-container {
+    position: absolute;
+    left: -75%; /* Adjust as needed to position the back arrow to the left */
+    top: 50%;
+    transform: translateY(-50%); /* Center the arrow vertically */
+    z-index: 11; /* Ensure it sits above the header capsule */
+  }
+  
+  .back-arrow {
+    cursor: pointer;
+    margin-right: 20px; /* Adjust as needed */
+    /* Add size and other styles for the back arrow */
+  }
+  
+  .location-header-info {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+  }
+  
+  .vector {
+    margin-right: 15px;
+  }
+
+  .name-id {
+    margin-right: 15px;
+    font-weight: bold;
+  }
+  
+  .status-indicator {
+    width: 41.76px; /* Adjust size as needed */
+    height: 41.76px; /* Adjust size as needed */
+    background-color: #61C554;
+    border-radius: 50%; /* Circular shape */
+    margin-right: 15px; /* Space between name and indicator */
+    margin-top: 5px;
+  }
+  
+  .current-time {
+    font-weight: bold;
+    margin-right: 15px;
+  }
+  

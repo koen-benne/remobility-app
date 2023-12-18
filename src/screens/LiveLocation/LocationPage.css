@@ -1,0 +1,46 @@
+.location-page {
+  position: relative; /* The parent container must be relative for absolute children */
+  width: 100%; /* Full width */
+  height: 100vh; /* Full viewport height */
+  background-size: cover;
+  background-position: center;
+}
+
+.mini-dynamic-island {
+  position: absolute;
+  padding: 15px 25px;
+  top: 52%; /* Adjust this value to change the vertical position */
+  left: 29%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust both X and Y for precise centering */
+  width: auto; /* Width of the mini capsule */
+  height: auto; /* Height of the mini capsule */
+  background: #fff; /* Background of the capsule */
+  border-radius: 50px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow for depth */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.vector-graphic {
+  position: absolute;
+  width: 50px; /* Width of the vector graphic */
+  height: 50px; /* Height of the vector graphic */
+  justify-content: center;
+  align-items: center;
+  transform: translateY(150% ); /* Center the arrow vertically */
+
+}
+
+.battery80 {
+  width: 72px;
+  height: 42.45px;
+  margin-right: 10px;
+}
+
+.internet3 {
+  width: 50.92%;
+  height: 39%;
+  margin-left: 10px;
+}
