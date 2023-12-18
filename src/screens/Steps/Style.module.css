@@ -59,6 +59,7 @@
 
     .textContainer {
       max-width: 80%;
+      text-align: center;
 
       .title {
         font-size: 8rem;

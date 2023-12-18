@@ -52,7 +52,7 @@ const Steps = (props) => {
             height: "80px",
             fontSize: "1.5rem",
           },
-          onClick: () => navigate('/login'),
+          onClick: () => navigate('/dashboard'),
         },
       ],
     },
@@ -66,7 +66,7 @@ const Steps = (props) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (step === 2) {
+      if (step === 0) {
         return;
       }
       setSuccess(false);
