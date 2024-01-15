@@ -1,21 +1,22 @@
 import React from 'react';
+import { useNavigate } from 'react-router';
 import style from './Style.module.css';
-import gearIcon from '../../../assets/person.png';
-import logoutIcon from '../../../assets/logout.png';
+import personIcon from '../../../assets/person.png';
 
 
 const OverviewHeader = () => {
+  const navigate = useNavigate();
+
   return (
     <header className={style.overviewHeader}>
-        <button className={style.sideButton}>
-        <img src={gearIcon} alt="Settings" className={style.person} />
-      </button>
+      <div className={style.sideButton} onClick={() => navigate('/profile')}>
+        <img src={personIcon} alt="Profile" className={style.person} />
+      </div>
       <div className={style.overviewHeaderContent}>
         <h1>IP-Car_123456</h1>
         <div className={style.onlineIndicator}></div>
       </div>
-      <button className={style.sideButton}>
-      </button>
+      <div className={style.sideButton}></div>
     </header>
   );
 }

@@ -6,6 +6,7 @@ import Steps from './screens/Steps/Component';
 import Dashboard from './screens/Dashboard/Dashboard';
 import LiveLocation from './screens/LiveLocation/Component';
 import Drive from './screens/Drive/Component';
+import Profile from './screens/Profile/Component'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/drive" element={<Drive />} /> {/* Route for the drive page */}
         <Route path="/location" element={<LiveLocation />} /> {/* Route for the location page */}
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </div>
   );

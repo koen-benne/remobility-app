@@ -41,12 +41,3 @@
   text-align: center;
 }
 
-.gearIcon {
-  width: 60px; /* Or the size you prefer */
-  height: 60px; /* Or the size you prefer */
-}
-.iconLogout {
-  width: 40px; /* Adjust size as needed */
-  height: 40px; /* Adjust size as needed */
-  margin-bottom: 10px; /* Space between icon and text */
-}
