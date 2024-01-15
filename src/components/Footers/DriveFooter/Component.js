@@ -27,8 +27,8 @@ const DriveFooter = () => {
               <p className={style.speedText}>Snelheid</p>
           </div>
           <div className={style.iconsContainer}>
-              <img src={Battery80} alt="Battery Level" className='battery80'/>
-              <img src={Internet3} alt="Internet Connection" className='internet3'/>
+              <img src={Battery80} alt="Battery Level" className={style.battery80}/>
+              <img src={Internet3} alt="Internet Connection" className={style.internet3}/>
           </div>
     </div>
   );

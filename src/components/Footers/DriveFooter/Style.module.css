@@ -41,12 +41,11 @@
     margin: 0 5px;
     background-color: transparent;
     border: 2px solid white;
-
-    .blue {
-      background-color: blue;
-    }
   }
 
+  .circle.blue {
+    background-color: #4690FF;
+  }
 
   .speedText {
     color: white;
@@ -62,3 +61,10 @@
     transform: translateX(-60px);
   }
 
+  .battery80 {
+    margin: 10px;
+  }
+
+  .internet3 {
+    margin: 10px;
+  }
