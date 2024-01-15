@@ -6,13 +6,6 @@ html, body
     overflow: hidden; /* This will hide any overflow, removing the scroll bar */
 }
 
-.Dashboard 
-{
-    display: flex;
-    flex-direction: column;
-    background-color: #1F2235;
-}
-
 .buttonContainer {
     display: flex;
     flex-direction: row;
