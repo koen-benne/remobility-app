@@ -1,0 +1,103 @@
+.screen {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .textContainer {
+      text-align: center;
+      max-width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+
+      .title {
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      .text {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .options {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        .option {
+          flex: 1;
+          margin: 0 0.5rem;
+        }
+      }
+    }
+
+  }
+
+  .welcome {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      top: 70px;
+      width: 200px;
+      position: absolute;
+    }
+
+    .textContainer {
+      max-width: 80%;
+      text-align: center;
+
+      .title {
+        font-size: 8rem;
+      }
+      .text {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+
+  .progressBar {
+    width: 80%;
+    height: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 200px;
+
+    .barSection {
+      height: 100%;
+      flex: 1;
+      background-color: white;
+      margin: 0 0.2rem;
+      border-radius: 8px;
+
+      .filler {
+        height: 100%;
+        background-color: var(--color-secondary-blue);
+        border-radius: inherit;
+        transition: width 0.3s ease-in;
+        width: 0%;
+      }
+
+      .show {
+        width: 100%;
+      }
+    }
+  }
+}

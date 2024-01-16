@@ -33,7 +33,7 @@ const Login = (props) => {
         {
           type: "submit",
           value: "Inloggen",
-          onClick: () => navigate('/welcome', {replace: true}),
+          onClick: () => navigate('/steps', {replace: true}),
           // disabled: props.disabledLogin,
         }
       ]
