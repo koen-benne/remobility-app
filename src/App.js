@@ -20,14 +20,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Startup/>} />
         <Route path="login" element={<Login/>} />
-        <Route path="welcome" element={<Steps/>} />
-        <Route path="/" element={<Startup />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/drive" element={<Drive />} /> {/* Route for the drive page */}
-        <Route path="/location" element={<LiveLocation />} /> {/* Route for the location page */}
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/editprofile" element={<ProfileEdit />} />
-        <Route path="/cars" element={<Cars />} />
+        <Route path="dashboard" element={<Dashboard />} />
+        <Route path="drive" element={<Drive />} /> {/* Route for the drive page */}
+        <Route path="location" element={<LiveLocation />} /> {/* Route for the location page */}
+        <Route path="profile" element={<Profile />} />
+        <Route path="editprofile" element={<ProfileEdit />} />
+        <Route path="cars" element={<Cars />} />
         <Route path="steps" element={<Steps/>} />
         <Route path="steps2" element={<Steps2/>} />
         <Route path="dashboard" element={<Dashboard />} />
