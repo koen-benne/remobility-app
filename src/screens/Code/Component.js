@@ -2,6 +2,7 @@ import React from 'react';
 import style from './Style.module.css';
 import { useNavigate } from 'react-router';
 import FormInput from '../../components/FormInput/Component';
+import BackButton from '../../components/BackButton/Component';
 
 const Code = (props) => {
   const navigate = useNavigate();
@@ -9,6 +10,7 @@ const Code = (props) => {
 
   return (
     <div className={style.screen}>
+      <BackButton backFunction={() => navigate('/steps')}/>
       <h1 className={style.title}>Voer de koppelcode van de IP-Car in</h1>
       <div className={style.input}>
         <FormInput

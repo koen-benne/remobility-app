@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import style from './Style.module.css';
+import BackButton from '../../components/BackButton/Component';
 import { useNavigate } from 'react-router';
 
 const Qr = (props) => {
@@ -7,6 +8,7 @@ const Qr = (props) => {
 
   return (
     <div className={style.screen}>
+      <BackButton backFunction={() => navigate('/steps')}/>
       <h1 className={style.title}>Scan de QR code op de IP-Car</h1>
       <div className={style.qrBox} onClick={() => navigate('/steps2')}>
         <div className={style.corner1} />
