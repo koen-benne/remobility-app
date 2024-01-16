@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router'; // Import useNavigate hook
 import style from './Style.module.css';
-import ProfileHeader from '../../components/Headers/ProfileHeader/Component';
+import ProfileEditHeader from '../../components/Headers/ProfileEditHeader/Component';
 import FormInput from '../../components/FormInput/Component';
 
 const Profile = () => {
@@ -9,31 +9,31 @@ const Profile = () => {
 
   return (
     <>  
-      <ProfileHeader />
+      <ProfileEditHeader />
       <div className={style.buttonContainer}>
       <FormInput
           type="iconButton"
           iconName="empty"
-          text="Profiel bewerken"
+          text="Annuleren"
           style={{
             height: '50px',
             fontSize: '1.5rem',
             fontWeight: 'bold'
           }}
           iconStyle={{ width: '1', height: '1px' }}
-          onClick={() => navigate('/editprofile')}
+          onClick={() => navigate('/profile')}
         />
-        <FormInput
+       <FormInput
           type="iconButton"
-          iconName="car"
-          text="Jouw auto's"
+          iconName="empty"
+          text="Opslaan"
           style={{
-            height: '500px',
-            fontSize: '2.5rem',
+            height: '50px',
+            fontSize: '1.5rem',
             fontWeight: 'bold'
           }}
-          iconStyle={{ width: '150px', height: '73px' }}
-          onClick={() => navigate('/cars')}
+          iconStyle={{ width: '1', height: '1px' }}
+          onClick={() => navigate('/profile')}
         />
       </div>
     </>

@@ -1,0 +1,40 @@
+.profileHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1F2235;
+  color: #fff;
+  padding: 1px 40px; /* Increased side padding for alignment */
+  box-sizing: border-box;
+}
+
+.profileHeader h1 {
+  font-size: 64px; /* Increased font size for the header title */
+  text-align: center;
+}
+
+.profileHeaderContent {
+  display: flex;
+  align-items: center;
+}
+
+.sideButton {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center-align items horizontally */
+  justify-content: center; /* Center-align items vertically */
+  font-size: 20px; /* Adjust as necessary to match the blue buttons */
+  padding: 10px 20px; /* Padding to increase clickable area */
+  text-align: center;
+}
+
+.iconLogout {
+  width: 35px; /* Adjust size as needed */
+  height: 35px; /* Adjust size as needed */
+  margin-bottom: 10px; /* Space between icon and text */
+}
+
