@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react';
 import style from './Style.module.css';
 import { useNavigate, useLocation } from 'react-router';
 import FormInput from '../../components/FormInput/Component';
+import carConnected from '../../assets/car-connected.png';
 
 const Steps2 = (props) => {
   const steps = [
     {
     },
     {
-      successIcon: "test",
+      successIcon: carConnected,
       successTitle: "Car Gekoppeld",
       successSubtitle: "De auto staat aan en is gekoppeld aan uw profiel.",
       successOptions: [
@@ -34,7 +35,7 @@ const Steps2 = (props) => {
   return (
     <div className={style.screen}>
       <div className={style.step}>
-        {/* <img className={style.icon} src={process.env.PUBLIC_URL + '/icons/' + steps[step - 1][success ? "successIcon" : "icon"] + '.svg'} alt={steps[step - 1].title} /> */}
+        <img className={style.icon} src={steps[step - 1][success ? "successIcon" : "icon"]} alt={steps[step - 1].title} />
         <div className={style.textContainer}>
           <h1 className={style.title}>{steps[step - 1][success ? "successTitle" : "title"]}</h1>
           <p className={style.text}>{steps[step - 1][success ? "successSubtitle" : "subtitle"]}</p>
