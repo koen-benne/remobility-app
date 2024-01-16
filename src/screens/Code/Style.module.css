@@ -1,0 +1,32 @@
+.screen {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .input {
+    width: 70%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 4rem;
+    text-align: center;
+  }
+
+  .text {
+    text-align: center;
+    width: 800px;
+    max-width: 80%;
+    margin-bottom: 4rem;
+  }
+}

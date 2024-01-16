@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import style from './Style.module.css';
-import { useNavigate } from 'react-router';
+import { useNavigate, useLocation } from 'react-router';
 import FormInput from '../../components/FormInput/Component';
 
 const Steps = (props) => {
@@ -28,7 +28,7 @@ const Steps = (props) => {
             height: "350px",
             borderRadius: "20px",
           },
-          onClick: () => console.log("Qr-code"),
+          onClick: () => navigate('/qr'),
         },
         {
           placeholder: "Voer de koppelcode in",
@@ -38,7 +38,7 @@ const Steps = (props) => {
             height: "350px",
             borderRadius: "20px",
           },
-          onClick: () => console.log("Koppelcode"),
+          onClick: () => navigate('/code'),
         },
       ],
       successIcon: "test",
@@ -60,19 +60,21 @@ const Steps = (props) => {
 
   const navigate = useNavigate();
 
-  const [step, setStep] = useState(0);
-  const [success, setSuccess] = useState(false);
+  const [step, setStep] = useState(props.step ?? 0);
+  const [success, setSuccess] = useState(props.success ?? false);
   const options = (steps[step - 1] || {})[success ? "successOptions" : "options"];
 
   useEffect(() => {
     const interval = setInterval(() => {
+      if (step === 0) {
+        setTimeout(() => {
+          setSuccess(true);
+        }, 2000);
+      }
       if (step === 2) {
         return;
       }
       setSuccess(false);
-      setTimeout(() => {
-        setSuccess(true);
-      }, 2000);
       setStep(prev => prev + 1);
     }, 4000);
     return () => clearInterval(interval);
