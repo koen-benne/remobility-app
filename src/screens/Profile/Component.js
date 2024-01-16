@@ -8,7 +8,7 @@ const Profile = () => {
   const navigate = useNavigate();
 
   return (
-    <>  
+    <div className={style.screen}>
       <ProfileHeader />
       <div className={style.buttonContainer}>
       <FormInput
@@ -36,8 +36,7 @@ const Profile = () => {
           onClick={() => navigate('/cars')}
         />
       </div>
-    </>
-    
+    </div>
   );
 };
 

@@ -8,7 +8,7 @@ const Profile = () => {
   const navigate = useNavigate();
 
   return (
-    <>  
+    <>
       <ProfileEditHeader />
       <div className={style.buttonContainer}>
       <FormInput
@@ -37,7 +37,6 @@ const Profile = () => {
         />
       </div>
     </>
-    
   );
 };
 

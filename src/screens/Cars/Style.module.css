@@ -1,52 +1,54 @@
+.screen {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-black);
+}
 .carsPage {
-    position: relative; /* The parent container must be relative for absolute children */
-    width: 100%; /* Full width */
-    height: 100vh; /* Full viewport height */
-    background-size: cover;
-    background-position: center;
-    transform: translate(18%, -10%); /* Adjust both X and Y for precise centering */
-    background-color: #1F2235;
-  }
+  position: absolute; /* The parent container must be relative for absolute children */
+  width: 75vw;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  transform: translate(18%, -10%); /* Adjust both X and Y for precise centering */
+  background-color: var(--color-black);
+}
 
-  .carsHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1F2235;
-    color: #fff;
-    padding: 1px 40px; /* Increased side padding for alignment */
-    box-sizing: border-box;
-  }
-  
-  .carsHeader h1 {
-    font-size: 64px; /* Increased font size for the header title */
-    text-align: center;
-  }
-  
-  .carsHeaderContent {
-    display: flex;
-    align-items: center;
-  }
-  
-  .sideButton {
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center-align items horizontally */
-    justify-content: center; /* Center-align items vertically */
-    font-size: 20px; /* Adjust as necessary to match the blue buttons */
-    padding: 10px 20px; /* Padding to increase clickable area */
-    text-align: center;
-  }
-  
-  /* Back arrow container */
-  .backArrowContainer {
-    flex: 0 1 auto; /* Do not grow, allow shrink */
-  }
-  
-  .carsbgc {
-    background-color: #1F2235;
-  }
+.carsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-black);
+  color: #fff;
+  padding: 1px 40px; /* Increased side padding for alignment */
+  box-sizing: border-box;
+}
+
+.carsHeader h1 {
+  font-size: 64px; /* Increased font size for the header title */
+  text-align: center;
+  z-index: 1; /* Ensure the header stays  top of the background image */
+}
+
+.carsHeaderContent {
+  display: flex;
+  align-items: center;
+}
+
+.sideButton {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center-align items horizontally */
+  justify-content: center; /* Center-align items vertically */
+  font-size: 20px; /* Adjust as necessary to match the blue buttons */
+  padding: 10px 20px; /* Padding to increase clickable area */
+  text-align: center;
+}
+
+/* Back arrow container */
+.backArrowContainer {
+  flex: 0 1 auto; /* Do not grow, allow shrink */
+}

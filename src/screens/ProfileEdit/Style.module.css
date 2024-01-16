@@ -1,12 +1,9 @@
-html, body 
-{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden; /* This will hide any overflow, removing the scroll bar */
-}
+.screen {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-black);
 
-.buttonContainer {
+  .buttonContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -16,6 +13,4 @@ html, body
     height: calc(105vh - 200px); /* Adjust this value to ensure no scrolling */
     box-sizing: border-box;
   }
-
-  
-  
+}
