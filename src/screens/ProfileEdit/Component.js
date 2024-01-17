@@ -86,6 +86,7 @@ const Profile = () => {
               color: '#fff'
             }}
            />
+           <div className={style.rowSpaces}>
            <FormInput className={style.labelChanges} 
             type="label"
             placeholder="01"
@@ -97,6 +98,8 @@ const Profile = () => {
               color: '#fff'
             }}
            />
+           </div>
+           <div className={style.rowSpaces}>
            <FormInput className={style.labelChanges} 
             type="label"
             placeholder="1985"
@@ -108,13 +111,62 @@ const Profile = () => {
               color: '#fff'
             }}
            />
+           </div>
             </div>
           </div>
         </div>
         <div>
-          <div className={style.textSpace2}>
+          <div className={style.textSpace}>
             <h3>Geslacht</h3>
-            <p>Man</p>
+            <div className={style.rowMaker}>
+              <div className={style.rowMaker}>
+                <FormInput className={style.labelChanges} 
+                type="radio"
+                value="huey" checked
+                style={{
+                  height: '15px',
+                  width: '15px',
+                  fontSize: '1rem',
+                  fontWeight: 'bold',
+                  color: '#fff',
+                  margin: 'auto'
+                }}
+                />
+                <p className={style.paragraphChange}>Man</p>
+              </div>
+              <div className={style.rowSpaces}>
+              <div className={style.rowMaker}>
+                <FormInput className={style.labelChanges} 
+                type="radio"
+                style={{
+                  height: '15px',
+                  width: '15px',
+                  fontSize: '1rem',
+                  fontWeight: 'bold',
+                  color: '#fff',
+                  margin: 'auto'
+                }}
+              />
+              <p className={style.paragraphChange}>Vrouw</p>
+            </div>
+            </div>
+            <div className={style.rowSpaces}>
+            <div className={style.rowMaker}>
+                <FormInput className={style.labelChanges} 
+                type="radio"
+                style={{
+                  height: '15px',
+                  width: '15px',
+                  fontSize: '1rem',
+                  fontWeight: 'bold',
+                  color: '#fff',
+                  margin: 'auto'
+                }}
+              />
+              <p className={style.paragraphChange}>Anders</p>
+            </div>
+            </div>
+           </div>
           </div>
         </div>
         </div>
