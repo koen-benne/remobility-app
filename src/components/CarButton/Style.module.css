@@ -1,0 +1,9 @@
+.button {
+  color: black;
+  background-color: white;
+
+  &.active {
+    background-color: var(--color-secondary-blue);
+    color: white;
+  }
+}
