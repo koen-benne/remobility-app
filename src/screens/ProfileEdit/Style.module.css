@@ -2,15 +2,15 @@
   width: 100vw;
   height: 100vh;
   background-color: var(--color-black);
+}
 
-  .buttonContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: end; /* This ensures vertical centering of the buttons */
-    background-color: #1F2235;
-    padding: 50px 30px; /* Increased side padding for more space around buttons */
-    height: calc(105vh - 200px); /* Adjust this value to ensure no scrolling */
-    box-sizing: border-box;
-  }
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end; /* This ensures vertical centering of the buttons */
+  background-color: #1F2235;
+  padding: 50px 30px; /* Increased side padding for more space around buttons */
+  height: calc(105vh - 200px); /* Adjust this value to ensure no scrolling */
+  box-sizing: border-box;
 }

@@ -2,15 +2,52 @@
   width: 100vw;
   height: 100vh;
   background-color: var(--color-black);
+}
 
-  .buttonContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: end; /* This ensures vertical centering of the buttons */
-    background-color: #1F2235;
-    padding: 50px 30px; /* Increased side padding for more space around buttons */
-    height: calc(105vh - 200px); /* Adjust this value to ensure no scrolling */
-    box-sizing: border-box;
-  }
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; /* This ensures vertical centering of the buttons */
+  background-color: #1F2235;
+  padding: 50px 30px; /* Increased side padding for more space around buttons */
+  height: calc(105vh - 200px); /* Adjust this value to ensure no scrolling */
+  box-sizing: border-box;
+  margin: 0px 0px 0px -2000px;
+}
+
+.buttonContainer1 {
+  padding-bottom: 100px;
+}
+
+.profileAlignment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.userInfo {
+  margin: 0px 0px 0px 100px;
+}
+
+.userName {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.textSpace h3 {
+  margin-bottom: -10px;
+}
+
+.textSpace1 h3 {
+  margin-bottom: -10px;
+}
+
+.textSpace2 h3 {
+  margin-bottom: -10px;
+}
+
+.textSpace2 {
+  margin-bottom: 124px;
 }
