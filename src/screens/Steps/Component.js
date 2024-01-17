@@ -1,15 +1,28 @@
 import React, { useEffect, useState } from 'react';
+import { useRecoilState, atom } from 'recoil';
 import style from './Style.module.css';
 import { useNavigate, useLocation } from 'react-router';
 import FormInput from '../../components/FormInput/Component';
+import carConnected from '../../assets/car-connected.png';
+import controller from '../../assets/controller.png';
+import controllerConnected from '../../assets/controller-connected.png';
+
+const stepsState = atom({
+  key: 'stepsState',
+  default: 0,
+});
+const successState = atom({
+  key: 'successState',
+  default: false,
+});
 
 const Steps = (props) => {
   const steps = [
     {
-      icon: "",
+      icon: controller,
       title: "Controller Aansluiten",
       subtitle: "Als eerst moeten we de controller aansluiten. Zorg dat de controller aanstaat, dan kan deze gekoppeld worden. Als die gekoppeld is gaan we door.",
-      successIcon: "test",
+      successIcon: controllerConnected,
       successTitle: "Controller Gevonden",
       successSubtitle: "De controller is gevonden en gekoppeld.",
     },
@@ -25,7 +38,8 @@ const Steps = (props) => {
           height: "350px",
           style: {
             fontSize: "3rem",
-            height: "350px",
+            maxHeight: "350px",
+            height: "35vh",
             borderRadius: "20px",
           },
           onClick: () => navigate('/qr'),
@@ -35,13 +49,14 @@ const Steps = (props) => {
           value: "Koppelcode",
           style: {
             fontSize: "3rem",
-            height: "350px",
+            maxHeight: "350px",
+            height: "35vh",
             borderRadius: "20px",
           },
           onClick: () => navigate('/code'),
         },
       ],
-      successIcon: "test",
+      successIcon: carConnected,
       successTitle: "Car Gekoppeld",
       successSubtitle: "De auto staat aan en is gekoppeld aan uw profiel.",
       successOptions: [
@@ -60,8 +75,8 @@ const Steps = (props) => {
 
   const navigate = useNavigate();
 
-  const [step, setStep] = useState(props.step ?? 0);
-  const [success, setSuccess] = useState(props.success ?? false);
+  const [step, setStep] = useRecoilState(stepsState);
+  const [success, setSuccess] = useRecoilState(successState);
   const options = (steps[step - 1] || {})[success ? "successOptions" : "options"];
 
   useEffect(() => {
@@ -92,7 +107,7 @@ const Steps = (props) => {
         </div>
       :
         <div className={style.step}>
-          {/* <img className={style.icon} src={process.env.PUBLIC_URL + '/icons/' + steps[step - 1][success ? "successIcon" : "icon"] + '.svg'} alt={steps[step - 1].title} /> */}
+          <img className={style.icon} src={steps[step - 1][success ? "successIcon" : "icon"]} />
           <div className={style.textContainer}>
             <h1 className={style.title}>{steps[step - 1][success ? "successTitle" : "title"]}</h1>
             <p className={style.text}>{steps[step - 1][success ? "successSubtitle" : "subtitle"]}</p>
