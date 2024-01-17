@@ -16,7 +16,7 @@ const OverviewHeader = () => {
         <h1>IP-Car_123456</h1>
         <div className={style.onlineIndicator}></div>
       </div>
-      <div className={style.sideButton}></div>
+      <div className={style.placeholder}></div>
     </header>
   );
 }

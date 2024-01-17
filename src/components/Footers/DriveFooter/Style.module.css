@@ -7,17 +7,24 @@
     left: 0;
     width: 100%;
     height: 80px;
-    padding: 0 20px; /* Adjust padding as needed */
-    background-color: #2C2C2C;
+    background-color: var(--color-black);
   }
 
   /* Back arrow container */
-  .backArrowContainer {
+  .backArrowWhiteContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    width: 120px;
+    height: 100%;
+    background-color: #383F6B;
     flex: 0 1 auto; /* Do not grow, allow shrink */
   }
 
   /* Speed indicator container */
   .speedIndicatorContainer {
+    margin-left: -100px;
     flex: 0 1 auto; /* Do not grow, allow shrink */
     display: flex;
     flex-direction: column;

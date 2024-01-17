@@ -28,7 +28,8 @@
 }
 
 .sideButton {
-  background: none;
+  background-color: #383F6B;
+  border-radius: 20px;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -37,7 +38,11 @@
   align-items: center; /* Center-align items horizontally */
   justify-content: center; /* Center-align items vertically */
   font-size: 20px; /* Adjust as necessary to match the blue buttons */
-  padding: 10px 20px; /* Padding to increase clickable area */
+  padding: 18px 30px; /* Padding to increase clickable area */
   text-align: center;
+}
+
+.placeholder {
+  padding: 30px;
 }
 
