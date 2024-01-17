@@ -1,28 +1,34 @@
 .locationHeader {
-    position: absolute; /* Position the header absolutely within its relative container */
-    top: 20px; /* Adjust as needed */
-    left: 50%;
-    transform: translateX(-50%); /* Center the header */
-    z-index: 10; /* Ensure it sits on top of other elements */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white; /* or the color of the header in your mockup */
-    padding: 10px 40px; /* Padding inside the header */
-    margin-left: auto; /* Only pushing the header from the left */
-    margin-right: auto; /* Only pushing the header from the right */
-    max-width: 80%; /* Maximum width of the header to keep it centered */
-    border-radius: 30px; /* Large border radius for rounded edges */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Optional: adds shadow for depth */
+    z-index: 10;
+
+    .locationHeaderInfo {
+      position: absolute;
+      margin-left: auto; /* Only pushing the header from the left */
+      margin-right: auto; /* Only pushing the header from the right */
+      max-width: 80%;
+      border-radius: 30px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      background-color: white; /* or the color of the header in your mockup */
+      padding: 10px 40px; /* Padding inside the header */
+      top: 20px; /* Adjust as needed */
+      transform: translateX(-50%);
+      left: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      z-index: 100;
+    }
+
+    .backArrowContainer {
+      position: absolute;
+      top: 55px;
+      left: 50px;
+      transform: translateY(-50%); /* Center the arrow vertically */
+      z-index: 11; /* Ensure it sits above the header capsule */
+    }
   }
 
-  .backArrowContainer {
-    position: absolute;
-    left: -75%; /* Adjust as needed to position the back arrow to the left */
-    top: 50%;
-    transform: translateY(-50%); /* Center the arrow vertically */
-    z-index: 11; /* Ensure it sits above the header capsule */
-  }
 
   .backArrow {
     cursor: pointer;
@@ -30,17 +36,12 @@
     /* Add size and other styles for the back arrow */
   }
 
-  .locationHeaderInfo {
-    display: flex;
-    align-items: center;
-    font-size: 32px;
-  }
-
   .vector {
     margin-right: 15px;
   }
 
   .nameId {
+    margin-top: 5px;
     margin-right: 15px;
     font-weight: bold;
     color: black;
@@ -52,10 +53,10 @@
     background-color: #61C554;
     border-radius: 50%; /* Circular shape */
     margin-right: 15px; /* Space between name and indicator */
-    margin-top: 5px;
   }
 
   .currentTime {
+    margin-top: 5px;
     font-weight: bold;
     margin-right: 15px;
     color: black;
