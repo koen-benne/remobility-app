@@ -23,8 +23,10 @@
 
   .qrBox {
     position: relative;
-    width: 700px;
-    height: 700px;
+    max-width: 700px;
+    max-height: 700px;
+    width: 65vh;
+    height: 65vh;
 
 
     /* transparent pseudo element */

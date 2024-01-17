@@ -77,7 +77,6 @@
     }
   }
 
-
   .progressBar {
     width: 80%;
     height: 20px;
@@ -103,6 +102,28 @@
 
       .show {
         width: 100%;
+      }
+    }
+  }
+}
+
+@media(max-height: 900px) {
+
+  .screen {
+    .step {
+      margin-bottom: 150px;
+    }
+    .progressBar {
+      bottom: 100px;
+    }
+  }
+}
+
+@media(max-height: 650px) {
+  .screen {
+    .step {
+      .icon {
+        display: none;
       }
     }
   }
