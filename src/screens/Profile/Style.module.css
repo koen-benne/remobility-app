@@ -33,11 +33,18 @@
 .userName {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+}
+
+.userAlignment {
+  margin-left: 25px;
 }
 
 .textSpace h3 {
   margin-bottom: -10px;
+}
+
+.textSpace1 {
+  margin-left: 50px;
 }
 
 .textSpace1 h3 {

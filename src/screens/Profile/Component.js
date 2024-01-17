@@ -12,38 +12,40 @@ const Profile = () => {
       <ProfileHeader />
      <div className={style.profileAlignment}>
         <div className={style.userInfo}>
-          <div className={style.userName}>
-            <div className={style.textSpace}>
-              <h3>Voornaam</h3>
-              <p>Jasper</p>
+          <div className={style.userAlignment}>
+            <div className={style.userName}>
+              <div className={style.textSpace}>
+                <h3>Voornaam</h3>
+                <p>Jasper</p>
+              </div>
+              <div className={style.textSpace1}>
+                <h3>Achternaam</h3>
+                <p>de Vries</p>
+              </div>
             </div>
-            <div className={style.textSpace1}>
-              <h3>Achternaam</h3>
-              <p>de Vries</p>
+            <div>
+              <div className={style.textSpace}>
+                <h3>E-mailadres</h3>
+                <p>jasperdevries@gmail.com</p>
+              </div>
             </div>
-          </div>
-          <div>
-            <div className={style.textSpace}>
-              <h3>E-mailadres</h3>
-              <p>jasperdevries@gmail.com</p>
+            <div>
+              <div className={style.textSpace}>
+                <h3>Telefoonnummer</h3>
+                <p>06 12345678</p>
+              </div>
             </div>
-          </div>
-          <div>
-            <div className={style.textSpace}>
-              <h3>Telefoonnummer</h3>
-              <p>06 12345678</p>
+            <div>
+              <div className={style.textSpace}>
+                <h3>Geboortedatum</h3>
+                <p>01-01-1985</p>
+              </div>
             </div>
-          </div>
-          <div>
-            <div className={style.textSpace}>
-              <h3>Geboortedatum</h3>
-              <p>01-01-1985</p>
-            </div>
-          </div>
-          <div>
-            <div className={style.textSpace2}>
-              <h3>Geslacht</h3>
-              <p>Man</p>
+            <div>
+              <div className={style.textSpace2}>
+                <h3>Geslacht</h3>
+                <p>Man</p>
+              </div>
             </div>
           </div>
           <div className={style.buttonContainer1}>
