@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router';
 import style from './Style.module.css';
-import backArrow from '../../../assets/chevron.left.png';
+import backArrow from '../../../assets/chevron.left-white.png';
 import Vector from '../../../assets/vector.png';
 
 const LocationHeader = () => {

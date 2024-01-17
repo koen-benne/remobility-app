@@ -21,19 +21,23 @@
     }
 
     .backArrowContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #383F6B;
       position: absolute;
-      top: 55px;
-      left: 50px;
-      transform: translateY(-50%); /* Center the arrow vertically */
+      width: 80px;
+      height: 70px;
+      bottom: 0;
+      left: 0;
       z-index: 11; /* Ensure it sits above the header capsule */
+      padding-right: 10px;
     }
   }
 
 
   .backArrow {
     cursor: pointer;
-    margin-right: 20px; /* Adjust as needed */
-    /* Add size and other styles for the back arrow */
   }
 
   .vector {
