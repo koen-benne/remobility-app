@@ -18,12 +18,10 @@ const navigate = useNavigate();
           <h1>Auto's</h1>
         <div className={style.sideButton}></div>
       </header>
-      <div className={style.rowMaker}>
+      <div className={style.grid}>
         <CarButton tag="123456"/>
         <CarButton tag="456789"/>
         <CarButton tag="834692"/>
-      </div>
-      <div className={style.rowMaker}>
         <CarButton tag="537921"/>
         <CarButton tag="712614"/>
         <div className={style.button}>
