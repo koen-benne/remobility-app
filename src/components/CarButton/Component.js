@@ -14,12 +14,22 @@ const CarButton = (props) => {
 
   return (
     <div className={`${style.button} ${props.tag == car && style.active}`} onClick={() => setCar(props.tag)}>
-      <h2>IP-Car_{props.tag}</h2>
+      <div className={style.rowMaker}>
+      <h1 className={style.title}>IP-Car_{props.tag}</h1>
+      <div className={style.indicator}></div>
+      </div>
       <div className={style.editButtons}>
+        <div className={style.buttonComponent}>
         <img src={deleteIcon} className={style.editButton}></img>
+        <p>Verwijderen</p>
+        </div>
+        <div className={style.buttonComponent}>
         <img src={editIcon} className={style.editButton}></img>
+        <p>Aanpassen</p>
+        </div>
       </div>
     </div>
+    
   );
 };
 

@@ -1,9 +1,59 @@
 .button {
   color: black;
   background-color: white;
+  height: 250px;
+  width: 350px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 20px;
+  margin: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
 
   &.active {
     background-color: var(--color-secondary-blue);
     color: white;
+
+    .indicator {
+      background-color: #61C554;
+    }
   }
+}
+.indicator {
+  background-color: #FF3A2F;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+
+.title {
+  margin: 0px 0px -50px 0px;
+}
+
+.editButtons {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+
+.editButton {
+  align-items: center;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.buttonComponent {
+  margin: 0px 35px;
+}
+.rowMaker {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }

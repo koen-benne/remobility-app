@@ -67,7 +67,19 @@
 .rowMaker {
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
 }
+.button {
+  background-color: var(--color-app-gray);
+  height: 250px;
+  width: 350px;
+  border-radius: 20px;
+  margin: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
 

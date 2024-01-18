@@ -2,6 +2,7 @@ import React from 'react';
 import style from './Style.module.css';
 import { useNavigate } from 'react-router'; // Import useNavigate hook
 import backArrow from '../../assets/chevron.left-white.png';
+import addPlus from '../../assets/addicon.png';
 import CarButton from '../../components/CarButton/Component';
 
 
@@ -19,10 +20,15 @@ const navigate = useNavigate();
       </header>
       <div className={style.rowMaker}>
         <CarButton tag="123456"/>
-        <CarButton tag="133578"/>
+        <CarButton tag="456789"/>
         <CarButton tag="834692"/>
-        <CarButton tag="847348"/>
-        <CarButton tag="712613"/>
+      </div>
+      <div className={style.rowMaker}>
+        <CarButton tag="537921"/>
+        <CarButton tag="712614"/>
+        <div className={style.button}>
+        <img src={addPlus} alt="ADD"/>
+        </div>
       </div>
     </div>
   );
