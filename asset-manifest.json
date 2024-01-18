@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/remobility-app/static/css/main.691e5cd9.css",
-    "main.js": "/remobility-app/static/js/main.4146a126.js",
+    "main.js": "/remobility-app/static/js/main.1064b35d.js",
     "static/js/787.8b2cfe9b.chunk.js": "/remobility-app/static/js/787.8b2cfe9b.chunk.js",
     "static/media/map.png": "/remobility-app/static/media/map.8839b39ee3b009de0569.png",
     "static/media/drive-background.png": "/remobility-app/static/media/drive-background.f0c4f4b3f7cd551b208f.png",
@@ -25,11 +25,11 @@
     "static/media/CamptonThin.otf": "/remobility-app/static/media/CamptonThin.5be5340ef4612e5009f7.otf",
     "index.html": "/remobility-app/index.html",
     "main.691e5cd9.css.map": "/remobility-app/static/css/main.691e5cd9.css.map",
-    "main.4146a126.js.map": "/remobility-app/static/js/main.4146a126.js.map",
+    "main.1064b35d.js.map": "/remobility-app/static/js/main.1064b35d.js.map",
     "787.8b2cfe9b.chunk.js.map": "/remobility-app/static/js/787.8b2cfe9b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.691e5cd9.css",
-    "static/js/main.4146a126.js"
+    "static/js/main.1064b35d.js"
   ]
 }
